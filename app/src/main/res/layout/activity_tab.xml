@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/tabhost"
+    tools:context=".TabActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TabWidget
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linear_sa"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FBCACA"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/sakura"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/be"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFC107"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/beer"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/je"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#00BCD4"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/jellyfish"/>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>
